@@ -1,0 +1,54 @@
+<h1 mat-dialog-title>Share List</h1>
+
+    <div class="row">
+      <div class="col-md-9">
+            <div class="form-group">            
+            <input type="email" #emailInput class="form-control" formControlName="name" placeholder="Enter email" required>
+            </div>
+      </div>         
+      <div class="col-md-3">
+        <div class="form-group">
+          <button type="button" style="width: 100%;" class="btn btn-success" (click)="addEmail()">ADD</button>        
+        </div>
+      </div> 
+    </div>    
+      <!-- Table -->
+    <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <h3 class="mb-0">Emails</h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Email</th>                  
+                    <th class="text-right" scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let e of emails">
+                  <tr>                
+                    <td>
+                      {{e}}
+                    </td>                                 
+                    <td class="text-right">                                          
+                      <button type="button" class="btn btn-danger" routerLinkActive="active" (click)="removeEmail(e)">Delete</button>                  
+                    </td>                
+                  </tr>              
+                </tbody>
+              </table>
+            </div>            
+          </div>
+        </div>
+    </div>  
+    <br>  
+
+    <div class="row">
+        <div class="col-md-6">        
+          <button type="button" style="width: 100%; background-color: orange;" class="btn btn-primary" (click)="close()">Cancel</button>        
+        </div>
+        <div class="col-md-6">        
+            <button type="submit" style="width: 100%;" class="btn btn-primary" (click)="sendEmails()">Send</button>        
+        </div>
+    </div>
