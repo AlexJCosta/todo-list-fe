@@ -2,11 +2,8 @@ import { ElementRef } from '@angular/core';
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Item } from 'src/app/core/entities/item';
-import { List } from 'src/app/core/entities/list';
-import { ApiService } from 'src/app/core/services/Apiservice';
+import { ApiService } from '../../core/services/apiService';
 import { MyListComponent } from './my-list.component';
 
 @Component({

@@ -2,7 +2,7 @@ import { Component, OnInit, ɵConsole } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { ApiService } from 'src/app/core/services/Apiservice';
+import { ApiService } from '../../core/services/apiService';
 import { MyListDialogComponet } from './my-list.dialog.component';
 import { ShareListDialogComponet } from './share-listiDalog.component';
 

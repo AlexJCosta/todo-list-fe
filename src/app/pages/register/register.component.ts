@@ -3,8 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { User } from 'src/app/core/entities/user';
-import { ApiService } from 'src/app/core/services/Apiservice';
-import { AuthService } from 'src/app/core/services/authService';
+import { ApiService } from '../../core/services/apiService';
 
 @Component({
   selector: 'app-register',

@@ -4,7 +4,7 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { List } from 'src/app/core/entities/list';
-import { ApiService } from 'src/app/core/services/Apiservice';
+import { ApiService } from '../../core/services/apiService';
 import { AuthService } from 'src/app/core/services/authService';
 import { ListsComponent } from './lists.component';
 
