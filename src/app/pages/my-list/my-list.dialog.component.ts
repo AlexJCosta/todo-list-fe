@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Item } from 'src/app/core/entities/item';
 import { List } from 'src/app/core/entities/list';
-import { ApiService } from 'src/app/core/services/Apiservice';
+import { ApiService } from 'src/app/core/services/api.service';
 import { MyListComponent } from './my-list.component';
 
 @Component({

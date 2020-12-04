@@ -4,6 +4,10 @@
     "outDir": "../out-tsc/app",
     "types": []
   },
+  "include": [
+    "**/*.ts",
+    "**/app/core/services/*.ts"
+  ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts"

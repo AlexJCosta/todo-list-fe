@@ -3,7 +3,7 @@ import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
-import { ApiService } from '../../core/services/apiService';
+import { ApiService } from '../../core/services/api.service';
 import { MyListComponent } from './my-list.component';
 
 @Component({

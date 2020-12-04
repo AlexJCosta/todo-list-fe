@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { ApiService } from '../../core/services/apiService';
+import { ApiService } from 'src/app/core/services/api.service';
 import { AuthService } from 'src/app/core/services/authService';
 import { ListDialogComponet } from './list.dialog.component';
 
