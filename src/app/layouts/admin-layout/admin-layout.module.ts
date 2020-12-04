@@ -13,6 +13,7 @@ import { ListDialogComponet } from 'src/app/pages/lists/list.dialog.component';
 import { MyListDialogComponet } from 'src/app/pages/my-list/my-list.dialog.component';
 import { MyListComponent } from 'src/app/pages/my-list/my-list.component';
 import { ShareListDialogComponet } from 'src/app/pages/my-list/share-listiDalog.component';
+import { ApiService } from 'src/app/core/services/Apiservice';
 
 @NgModule({
   imports: [
@@ -30,7 +31,7 @@ import { ShareListDialogComponet } from 'src/app/pages/my-list/share-listiDalog.
     ListDialogComponet,
     MyListComponent,
     MyListDialogComponet,
-    ShareListDialogComponet
+    ShareListDialogComponet    
 
   ]
 })
