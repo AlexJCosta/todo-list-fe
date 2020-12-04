@@ -21,6 +21,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 import { ShareListDialogComponet } from './pages/my-list/share-listiDalog.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ShareListDialogComponet } from './pages/my-list/share-listiDalog.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent  
+    AuthLayoutComponent,
+    AboutComponent  
   ],
   providers: [
     ShareListDialogComponet,
