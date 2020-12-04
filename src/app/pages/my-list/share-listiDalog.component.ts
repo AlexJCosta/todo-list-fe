@@ -7,7 +7,6 @@ import { ToastrService } from 'ngx-toastr';
 import { Item } from 'src/app/core/entities/item';
 import { List } from 'src/app/core/entities/list';
 import { ApiService } from 'src/app/core/services/Apiservice';
-import { NotificationUtilComponent } from 'src/app/core/util/notifications.util.componet';
 import { MyListComponent } from './my-list.component';
 
 @Component({
@@ -25,8 +24,7 @@ export class ShareListDialogComponet implements OnInit {
     constructor(
     private fb: FormBuilder,
     private _apiService: ApiService,
-    public comp: MyListComponent,
-    public notification: NotificationUtilComponent,    
+    public comp: MyListComponent,    
     @Inject(MAT_DIALOG_DATA) public data: any,
     private toastr: ToastrService
   ) { 

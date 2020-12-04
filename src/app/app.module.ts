@@ -15,14 +15,12 @@ import { ComponentsModule } from './components/components.module';
 import { ListDialogComponet } from './pages/lists/list.dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ListsComponent } from './pages/lists/lists.component';
-import { NotificationUtilComponent } from './core/util/notifications.util.componet';
 import { MyListComponent } from './pages/my-list/my-list.component';
 import { MyListDialogComponet } from './pages/my-list/my-list.dialog.component';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 import { ShareListDialogComponet } from './pages/my-list/share-listiDalog.component';
-import { ApiService } from './core/services/Apiservice';
 
 
 @NgModule({
@@ -39,13 +37,12 @@ import { ApiService } from './core/services/Apiservice';
     CommonModule,
     BrowserModule,
     ToastrModule.forRoot(),
-    RouterModule   
+    RouterModule 
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent,
-    ApiService
+    AuthLayoutComponent  
   ],
   providers: [
     ShareListDialogComponet,
@@ -54,8 +51,7 @@ import { ApiService } from './core/services/Apiservice';
     ListDialogComponet, 
     ListsComponent,
     FormsModule,
-    ReactiveFormsModule, 
-    NotificationUtilComponent       
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
 })

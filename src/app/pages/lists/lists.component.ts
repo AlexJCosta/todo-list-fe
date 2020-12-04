@@ -5,7 +5,6 @@ import { ToastrService } from 'ngx-toastr';
 import { List } from 'src/app/core/entities/list';
 import { ApiService } from 'src/app/core/services/Apiservice';
 import { AuthService } from 'src/app/core/services/authService';
-import { NotificationUtilComponent } from 'src/app/core/util/notifications.util.componet';
 import { ListDialogComponet } from './list.dialog.component';
 
 @Component({
@@ -22,7 +21,6 @@ export class ListsComponent implements OnInit {
     public dialog: MatDialog,
     private _apiService: ApiService,
     private _router: Router,
-    private notification: NotificationUtilComponent,
     private toastr: ToastrService,
     private autService: AuthService
   ) {

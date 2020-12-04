@@ -6,7 +6,6 @@ import { ToastrService } from 'ngx-toastr';
 import { List } from 'src/app/core/entities/list';
 import { ApiService } from 'src/app/core/services/Apiservice';
 import { AuthService } from 'src/app/core/services/authService';
-import { NotificationUtilComponent } from 'src/app/core/util/notifications.util.componet';
 import { ListsComponent } from './lists.component';
 
 @Component({
@@ -26,8 +25,7 @@ export class ListDialogComponet implements OnInit {
   constructor(
     private fb: FormBuilder,
     private _apiService: ApiService,
-    public comp: ListsComponent,
-    public notification: NotificationUtilComponent,
+    public comp: ListsComponent,    
     private _router: Router,
     private toastr: ToastrService,
     private autService: AuthService,
@@ -77,7 +75,7 @@ export class ListDialogComponet implements OnInit {
             this.listForm.reset(success);
         },
         (error) => {
-            this.notification.showNotification('top','center', 'Oops! An error has occurred on the server.');
+            this.toastr.error('Oops! An error has occurred on the server.');
             console.log(error);
         });
     }

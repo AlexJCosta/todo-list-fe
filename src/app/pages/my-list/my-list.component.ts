@@ -3,7 +3,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ApiService } from 'src/app/core/services/Apiservice';
-import { NotificationUtilComponent } from 'src/app/core/util/notifications.util.componet';
 import { MyListDialogComponet } from './my-list.dialog.component';
 import { ShareListDialogComponet } from './share-listiDalog.component';
 
@@ -22,7 +21,6 @@ export class MyListComponent implements OnInit {
     public dialog: MatDialog,
     private _route: ActivatedRoute,
     private _apiService: ApiService,
-    public notification: NotificationUtilComponent,
     private toastr: ToastrService
   ) { 
     this.nameList = this._route.snapshot.params['name'];  
